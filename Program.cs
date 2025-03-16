@@ -189,8 +189,143 @@
             //else
             //{
             //    Console.WriteLine("Erorr");
+            //    }
+
+
+            //==================                     ===============================
+            //=================== C# Part2 Exercises ===============================
+            //==================                     ===============================
+
+
+            //=====================Simple Calculator (Switch-Case)================================
+
+
+            //    Console.WriteLine("Enter First number: ");
+            //    double Num1 = double.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("Enter Second Number: ");
+            //    double Num2 = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Select Operation :\n1.Add(+) \n2.Sup(-)\n3.Multiple(*)\n4.Dev(/)\n");
+            //    int operation = int.Parse(Console.ReadLine());
+            //    switch (operation)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("the Result is= " + (Num1 + Num2));
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("the Result is= " + (Num1 - Num2));
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("the result is =" + (Num1 * Num2));
+            //            break;
+            //        case 4:
+            //            if (Num2 != 0)
+            //                Console.WriteLine("The Result is =" + (Num1 / Num2));
+            //            else
+            //                Console.WriteLine("Can't devide by Zero");
+            //            break;
+
+
+            //===================== Basic ATM System================================
+
+            //double Balance = 1000;
+            //double Deposit_Draw;
+            //int Service;
+            //do
+            //{
+
+            //    Console.WriteLine("Welcome To ATM please choose Number of the service:\n1.Deposit\n2.withdraw\n3.Check Balance\n4.Exit");
+            //    Service = int.Parse(Console.ReadLine());
+
+
+
+            //    switch (Service)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("insert The money: ");
+            //            Deposit_Draw = double.Parse(Console.ReadLine());
+            //            Balance = Balance + Deposit_Draw;
+            //            Console.Clear();
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("how much You want to withdraw : ");
+            //            Deposit_Draw = double.Parse(Console.ReadLine());
+            //            if (Balance >= Deposit_Draw)
+            //                Balance = Balance - Deposit_Draw;
+
+            //            else
+            //                Console.WriteLine("Cant withDraw Low Balance ");
+            //            Console.Clear();
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("Your Balance is : " + Balance);
+            //            break;
+            //    }
+
+
             //}
+            //while (Service != 4);
+
+            //===================== Geometry Calculator ================================
+
+            //int Shape;
+            
+            //do
+            //{
+                
+            //    Console.WriteLine("\n Welcome To Geometry Calculator  please choose Number of the Shape:\n1.Circle\n2.Square\n3.Triangle\n4.Exit");
+
+            //     Shape = int.Parse(Console.ReadLine());
+
+            //int Raduis , Side ,Hight ,Base ;
+            //double Pi = 3.141;
+           
+            //    switch (Shape)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("Enter the Radius of the Circle: ");
+            //            Raduis = int.Parse(Console.ReadLine());
+            //            Console.WriteLine("The Area of the Circle is: " + (Pi * Raduis * Raduis));
+            //            Console.WriteLine("The Circumference of the Circle is: " + (Pi * 2 * Raduis));
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("Enter the Side of the Square: ");
+            //            Side = int.Parse(Console.ReadLine());
+            //            Console.WriteLine("The Area of the Square is: " + (Side * Side));
+            //            Console.WriteLine("The perimeter  of the Square is: " + (Side * 4));
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("Enter the Hight of the Triangle: ");
+            //            Hight = int.Parse(Console.ReadLine());
+            //            Console.WriteLine("Enter the Side of the Triangle: ");
+            //            Base = int.Parse(Console.ReadLine());
+            //            Console.WriteLine("The Area of the Triangle is: " + (0.5 * Base * Hight));
+            //            break;
+            //    }
+            //} while (Shape != 4);
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
         }
 
+
     }
-}
+    
+    
+    
+
