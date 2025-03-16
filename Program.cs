@@ -192,9 +192,9 @@
             //    }
 
 
-            //==================                     ===============================
-            //=================== C# Part2 Exercises ===============================
-            //==================                     ===============================
+            //==================                     =======================================
+            //=================== C# Part2 Exercises =======================================
+            //==================                     =======================================
 
 
             //=====================Simple Calculator (Switch-Case)================================
@@ -321,24 +321,85 @@
 
             //===================== Sum of Even and Odd Numbers ================================
 
-          
-            double number, even = 0, odd = 0, i = 1;
-            Console.WriteLine("Enter   number  ");
-            number = double.Parse(Console.ReadLine());
-            do
-            {
-                if (i % 2 == 0)
-                {
-                    even += i;
-                }
-                else
-                {
-                    odd += i;
-                }
-                i++;
-            } while (i <= number);
-            Console.WriteLine("even   number  " + even);
-            Console.WriteLine("odd   number  " + odd);
+
+            //double number, even = 0, odd = 0, i = 1;
+            //Console.WriteLine("Enter   number  ");
+            //number = double.Parse(Console.ReadLine());
+            //do
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        even += i;
+            //    }
+            //    else
+            //    {
+            //        odd += i;
+            //    }
+            //    i++;
+            //} while (i <= number);
+            //Console.WriteLine("even   number  " + even);
+            //Console.WriteLine("odd   number  " + odd);
+
+
+            //===================== Scientific Calculator (Switch-Case & Math Functions)  ================================
+
+
+            //int operation;
+
+
+            //    Console.WriteLine("Select Operation :\n1.sin \n2.cos\n3.tan\n4.sqrt\n5.log\n6.pow");
+            //    operation = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Enter the Number : ");
+            //    double Num1 = double.Parse(Console.ReadLine());
+
+            //    switch (operation)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("the Result is= " + Math.Sin(Num1));
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("the Result is= " + (Math.Cos(Num1)));
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("the result is =" + (Math.Tan(Num1)));
+            //            break;
+            //        case 4:
+            //            Console.WriteLine("The Result is =" + (Math.Sqrt(Num1)));
+            //            break;
+            //        case 5:
+            //            Console.WriteLine("The Result is =" + (Math.Log(Num1)));
+            //            break;
+            //        case 6:
+            //            Console.WriteLine("Enter the power :");
+            //            int Power = int.Parse(Console.ReadLine());
+            //            Console.WriteLine("The Result is =" + (Math.Pow(Num1, Power)));
+            //            break;
+            //    }
+
+            
+
+
+
+                //===================== Guess Game with helper ================================
+
+
+
+                //int input = 0;
+                //Random random = new Random();
+                //double randomNumber = random.Next(1, 100);
+                //while (input != randomNumber) { 
+                //    Console.WriteLine("Guess the Number: ");
+                //input = int.Parse(Console.ReadLine());
+
+                //    if (input > randomNumber)               
+                //        Console.WriteLine("Try Lower!" );  
+
+                //    else if (input < randomNumber)
+                //        Console.WriteLine("Try Higher!" );
+
+
+                //}
+                //Console.WriteLine("You win!");
 
 
 
@@ -353,41 +414,7 @@
 
 
 
-
-
-            //===================== Guess Game with helper ================================
-
-
-
-            //int input = 0;
-            //Random random = new Random();
-            //double randomNumber = random.Next(1, 100);
-            //while (input != randomNumber) { 
-            //    Console.WriteLine("Guess the Number: ");
-            //input = int.Parse(Console.ReadLine());
-
-            //    if (input > randomNumber)               
-            //        Console.WriteLine("Try Lower!" );  
-
-            //    else if (input < randomNumber)
-            //        Console.WriteLine("Try Higher!" );
-
-
-            //}
-            //Console.WriteLine("You win!");
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
         }
 
 
