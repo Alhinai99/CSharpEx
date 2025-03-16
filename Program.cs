@@ -305,8 +305,8 @@
             //    }
             //} while (Shape != 4);
             //===================== Factorial of a Number ================================
-            
-            
+
+
             //int Num , i;
             //double Fact;
             //Console.WriteLine("Enter Number to get the Factorial: ");
@@ -319,6 +319,24 @@
             // Console.WriteLine("Factorial of a Number :" + Fact);
 
 
+            //===================== Guess Game with helper ================================
+
+            //int input = 0;
+            //Random random = new Random();
+            //double randomNumber = random.Next(1, 100);
+            //while (input != randomNumber) { 
+            //    Console.WriteLine("Guess the Number: ");
+            //input = int.Parse(Console.ReadLine());
+
+            //    if (input > randomNumber)               
+            //        Console.WriteLine("Try Lower!" );  
+                
+            //    else if (input < randomNumber)
+            //        Console.WriteLine("Try Higher!" );
+
+
+            //}
+            //Console.WriteLine("You win!");
 
 
 
