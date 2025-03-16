@@ -270,17 +270,17 @@
             //===================== Geometry Calculator ================================
 
             //int Shape;
-            
+
             //do
             //{
-                
+
             //    Console.WriteLine("\n Welcome To Geometry Calculator  please choose Number of the Shape:\n1.Circle\n2.Square\n3.Triangle\n4.Exit");
 
             //     Shape = int.Parse(Console.ReadLine());
 
             //int Raduis , Side ,Hight ,Base ;
             //double Pi = 3.141;
-           
+
             //    switch (Shape)
             //    {
             //        case 1:
@@ -304,7 +304,19 @@
             //            break;
             //    }
             //} while (Shape != 4);
+            //===================== Factorial of a Number ================================
             
+            
+            //int Num , i;
+            //double Fact;
+            //Console.WriteLine("Enter Number to get the Factorial: ");
+            //Num = int.Parse(Console.ReadLine());
+            //Fact = Num;
+            //for (i = 1; i < Num; i++ )
+            //{
+            //    Fact = Fact * i;
+            //}
+            // Console.WriteLine("Factorial of a Number :" + Fact);
 
 
 
@@ -317,11 +329,14 @@
 
 
 
-            }
 
 
 
         }
+
+
+
+    }
 
 
     }
