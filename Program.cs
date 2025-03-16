@@ -319,7 +319,45 @@
             // Console.WriteLine("Factorial of a Number :" + Fact);
 
 
+            //===================== Sum of Even and Odd Numbers ================================
+
+          
+            double number, even = 0, odd = 0, i = 1;
+            Console.WriteLine("Enter   number  ");
+            number = double.Parse(Console.ReadLine());
+            do
+            {
+                if (i % 2 == 0)
+                {
+                    even += i;
+                }
+                else
+                {
+                    odd += i;
+                }
+                i++;
+            } while (i <= number);
+            Console.WriteLine("even   number  " + even);
+            Console.WriteLine("odd   number  " + odd);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //===================== Guess Game with helper ================================
+
+
 
             //int input = 0;
             //Random random = new Random();
@@ -330,7 +368,7 @@
 
             //    if (input > randomNumber)               
             //        Console.WriteLine("Try Lower!" );  
-                
+
             //    else if (input < randomNumber)
             //        Console.WriteLine("Try Higher!" );
 
