@@ -376,35 +376,46 @@
             //            break;
             //    }
 
-            
+            //=====================  Print Pattern (For Loop)  ================================
+            int Number , i , j;
 
+            Console.WriteLine("Enter Number:");
+            Number = int.Parse(Console.ReadLine());
+            for (i =1; i<= Number; i++)
+            {
+              
+                for (j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
 
-
-                //===================== Guess Game with helper ================================
-
-
-
-                //int input = 0;
-                //Random random = new Random();
-                //double randomNumber = random.Next(1, 100);
-                //while (input != randomNumber) { 
-                //    Console.WriteLine("Guess the Number: ");
-                //input = int.Parse(Console.ReadLine());
-
-                //    if (input > randomNumber)               
-                //        Console.WriteLine("Try Lower!" );  
-
-                //    else if (input < randomNumber)
-                //        Console.WriteLine("Try Higher!" );
-
-
-                //}
-                //Console.WriteLine("You win!");
+            }
 
 
 
 
 
+            //===================== Guess Game with helper ================================
+
+
+
+            //int input = 0;
+            //Random random = new Random();
+            //double randomNumber = random.Next(1, 100);
+            //while (input != randomNumber) { 
+            //    Console.WriteLine("Guess the Number: ");
+            //input = int.Parse(Console.ReadLine());
+
+            //    if (input > randomNumber)               
+            //        Console.WriteLine("Try Lower!" );  
+
+            //    else if (input < randomNumber)
+            //        Console.WriteLine("Try Higher!" );
+
+
+            //}
+            //Console.WriteLine("You win!");
 
 
 
@@ -414,7 +425,12 @@
 
 
 
-            
+
+
+
+
+
+
         }
 
 
