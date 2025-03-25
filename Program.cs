@@ -10,7 +10,7 @@
             //Console.WriteLine("Enter a number To check if the number even or odd : ");
             //Number = int.Parse(Console.ReadLine());
 
-            //if (Number % 2 == 0)
+            //if (Number % 2 == 0) ////  % 2 == 0  to check if the number is even or odd
             //{
             //    Console.WriteLine("the Number u Entered Is : EVEN ");
 
@@ -29,12 +29,12 @@
             //Num1 = int.Parse(Console.ReadLine());
             //Num2 = int.Parse(Console.ReadLine());
             //Num3 = int.Parse(Console.ReadLine());
-            //if (Num1 > Num2 && Num1 > Num3)
+            //if (Num1 > Num2 && Num1 > Num3) ////  to check if the first number is the largest
             //{
             //    Console.WriteLine(Num1 +" is The largest Number ");
 
             //}
-            //else if (Num2 > Num1 && Num2 > Num3)
+            //else if (Num2 > Num1 && Num2 > Num3) ////  to check if the second number is the largest
             //{
             //    Console.WriteLine(Num2 + " is The largest Number ");
 
@@ -52,7 +52,7 @@
             //Console.WriteLine("Enter Celsius Degree to convert to Fahrenheit ");
             //Celsius = int.Parse(Console.ReadLine());
 
-            //Fahrenhite = (Celsius * 9 / 5) + 32;
+            //Fahrenhite = (Celsius * 9 / 5) + 32; ////  the formula to convert Celsius to Fahrenheit
 
             //Console.WriteLine("the degree in Fahrenheit is : " + Fahrenhite);
 
@@ -63,13 +63,13 @@
             //Console.WriteLine("Enter the price :  ");
             //Price = float.Parse(Console.ReadLine());
 
-            //if (Price > 100)
+            //if (Price > 100) ////  if the price is more than 100$ the discount will be 10%
             //{
             //    Discount = Price * 10 / 100;
             //    FinalPrice = Price - Discount;
             //    Console.WriteLine("Final price is : " + FinalPrice);
             //}
-            //else
+            //else  ////  if the price is less than 100$ no discount
             //{
             //    Console.WriteLine("Final price is : " + Price);
             //}
@@ -81,7 +81,7 @@
             //Console.WriteLine("Enter Student Mark : ");
             //StudentMark = int.Parse(Console.ReadLine());
 
-            //if (StudentMark > 100)
+            //if (StudentMark > 100)////  if the mark is more than 100
             //{
             //    Console.WriteLine("Error");
             //}
@@ -107,7 +107,7 @@
             //}
             //else
             //{
-            //    Console.WriteLine("Error");
+            //    Console.WriteLine("Error");////  if the mark is less than 0
             //}
 
             ////   ==============================Swap Two Numbers =====================================
@@ -117,9 +117,9 @@
             //Console.WriteLine("Enter 2 Numbers to Swap them : ");
             //Num1 = int.Parse(Console.ReadLine());
             //Num2 = int.Parse(Console.ReadLine());
-            //Store = Num1;
-            //Num1 = Num2;
-            //Num2 = Store;
+            //Store = Num1; ////  store the first number in the store variable
+            //Num1 = Num2;  ////  put the second number in the first number
+            //Num2 = Store; ////  put the first number in the second number
 
             //Console.WriteLine(Num1 +","+ Num2);
 
@@ -129,8 +129,8 @@
             //int Days, weeks, RemaningDays;
             //Console.WriteLine("Enter number of days to convort to weeks: ");
             //Days = int.Parse(Console.ReadLine());
-            //weeks = Days / 7;
-            //RemaningDays = Days % 7;
+            //weeks = Days / 7; ////  to get the number of weeks
+            //RemaningDays = Days % 7; ////  to get the remaining days
 
             //Console.WriteLine("Number of weeks : " + weeks + "\nNumber of Days : " + RemaningDays);
 
@@ -209,9 +209,9 @@
 
 
 
-            while (true)
+            while (true) ////  to keep the program running
             {
-                Console.Clear();
+                Console.Clear(); ////  to clear the console
                 Console.WriteLine("\nSelect a Program:");
                 Console.WriteLine("1. Simple Calculator");
                 Console.WriteLine("2. Basic ATM System");
@@ -228,7 +228,7 @@
                 Console.Write("Enter your choice: ");
                 int choice = int.Parse(Console.ReadLine());
 
-                switch (choice)
+                switch (choice) ////  to choose the program
                 {
                     case 1: SimpleCalculator(); break;
                     case 2: BasicATM(); break;
@@ -269,21 +269,21 @@
 
             Console.WriteLine("Select Operation :\n1.Add(+) \n2.Sup(-)\n3.Multiple(*)\n4.Dev(/)\n");
             int operation = int.Parse(Console.ReadLine());
-            switch (operation)
+            switch (operation) ////  to choose the operation
             {
-                case 1:
+                case 1: ////  to add
                     Console.WriteLine("the Result is= " + (Num1 + Num2));
                     break;
-                case 2:
+                case 2: ////  to substract
                     Console.WriteLine("the Result is= " + (Num1 - Num2));
                     break;
-                case 3:
+                case 3: ////  to multiply
                     Console.WriteLine("the result is =" + (Num1 * Num2));
                     break;
-                case 4:
+                case 4: ////  to devide
                     if (Num2 != 0)
                         Console.WriteLine("The Result is =" + (Num1 / Num2));
-                    else
+                    else ////  if the second number is zero
                         Console.WriteLine("Can't devide by Zero");
                     break;
             }          
@@ -304,27 +304,30 @@
 
 
 
-                    switch (Service)
-                    {
-                        case 1:
-                            Console.WriteLine("insert The money: ");
+                    switch (Service) ////  to choose the service
+                {
+                        case 1: ////  to deposit
+                        Console.WriteLine("insert The money: ");
                             Deposit_Draw = double.Parse(Console.ReadLine());
                             Balance = Balance + Deposit_Draw;
-                            
-                            break;
-                        case 2:
-                            Console.WriteLine("how much You want to withdraw : ");
+                            Console.ReadLine();
+
+                        break;
+                        case 2: ////  to withdraw
+                        Console.WriteLine("how much You want to withdraw : ");
                             Deposit_Draw = double.Parse(Console.ReadLine());
                             if (Balance >= Deposit_Draw)
                                 Balance = Balance - Deposit_Draw;
 
-                            else
-                                Console.WriteLine("Cant withDraw Low Balance ");
-                            
-                            break;
-                        case 3:
-                            Console.WriteLine("Your Balance is : " + Balance);
-                             
+
+                        else ////  if the balance is less than the amount
+                            Console.WriteLine("Cant withDraw Low Balance ");
+                                Console.ReadLine();
+
+                        break;
+                        case 3: ////  to check the balance
+                        Console.WriteLine("Your Balance is : " + Balance);
+                            Console.ReadLine();
                                 break;
                     }
                      Console.ReadLine();
@@ -349,8 +352,8 @@
                     int Raduis, Side, Hight, Base;
                     double Pi = 3.141;
 
-                    switch (Shape)
-                    {
+                    switch (Shape) ////  to choose the shape
+                {
                         case 1:
                             Console.WriteLine("Enter the Radius of the Circle: ");
                             Raduis = int.Parse(Console.ReadLine());
@@ -384,8 +387,8 @@
                 Console.WriteLine("Enter Number to get the Factorial: ");
                 Num = int.Parse(Console.ReadLine());
                 Fact = Num;
-                for (i = 1; i < Num; i++)
-                {
+                for (i = 1; i < Num; i++) ////  to get the factorial of the number
+            {
                     Fact = Fact * i;
                 }
                 Console.WriteLine("Factorial of a Number :" + Fact);
@@ -399,8 +402,8 @@
                 double number, even = 0, odd = 0, i = 1;
                 Console.WriteLine("Enter   number  ");
                 number = double.Parse(Console.ReadLine());
-                do
-                {
+            do ////  to get the sum of even and odd numbers
+            {
                     if (i % 2 == 0)
                     {
                         even += i;
@@ -428,8 +431,8 @@
                 Console.WriteLine("Enter the Number : ");
                 double Num1 = double.Parse(Console.ReadLine());
 
-                switch (operation)
-                {
+                switch (operation) ////  to choose the operation
+            {
                     case 1:
                         Console.WriteLine("the Result is= " + Math.Sin(Num1));
                         break;
@@ -462,11 +465,11 @@
 
                 Console.WriteLine("Enter Number:");
                 Number = int.Parse(Console.ReadLine());
-                for (i = 1; i <= Number; i++)
-                {
+                for (i = 1; i <= Number; i++) ////  to print the triangle
+            {
 
-                    for (j = 1; j <= i; j++)
-                    {
+                    for (j = 1; j <= i; j++) ////  to print the stars
+                {
                         Console.Write("*");
                     }
                     Console.WriteLine();
@@ -483,14 +486,14 @@
                 int n;
                 Console.WriteLine("Enter Number");
                 n = int.Parse(Console.ReadLine());
-                for (int i = 1; i <= n; i++)
+                for (int i = 1; i <= n; i++) ////  to print the pyramid
+            {
+                    for (int j = 1; j <= n - i; j++) ////  to print the spaces
                 {
-                    for (int j = 1; j <= n - i; j++)
-                    {
                         Console.Write(" ");
                     }
-                    for (int k = 1; k <= 2 * i - 1; k++)
-                    {
+                    for (int k = 1; k <= 2 * i - 1; k++) ////  to print the stars
+                {
                         Console.Write("*");
                     }
                     Console.WriteLine();
@@ -504,26 +507,26 @@
                 int n;
                 Console.WriteLine("Enter Number");
                 n = int.Parse(Console.ReadLine());
-                for (int i = 1; i <= n; i++)
+                for (int i = 1; i <= n; i++) ////  to print the first half of the diamond
+            {
+                    for (int j = 1; j <= n - i; j++) ////  to print the spaces
                 {
-                    for (int j = 1; j <= n - i; j++)
-                    {
                         Console.Write(" ");
                     }
-                    for (int k = 1; k <= 2 * i - 1; k++)
-                    {
+                    for (int k = 1; k <= 2 * i - 1; k++) ////  to print the stars
+                {
                         Console.Write("*");
                     }
                     Console.WriteLine();
                 }
-                for (int i = n - 1; i >= 1; i--)
+                for (int i = n - 1; i >= 1; i--) ////  to print the second half of the diamond
+            {
+                    for (int j = 1; j <= n - i; j++) ////  to print the spaces
                 {
-                    for (int j = 1; j <= n - i; j++)
-                    {
                         Console.Write(" ");
                     }
-                    for (int k = 1; k <= 2 * i - 1; k++)
-                    {
+                    for (int k = 1; k <= 2 * i - 1; k++) ////  to print the stars
+                {
                         Console.Write("*");
                     }
                     Console.WriteLine();
@@ -538,14 +541,14 @@
 
                 int input = 0;
                 Random random = new Random();
-                double randomNumber = random.Next(1, 100);
-                while (input != randomNumber)
+                double randomNumber = random.Next(1, 100); ////  to generate a random number between 1 and 100
+            while (input != randomNumber)
                 {
                     Console.WriteLine("Guess the Number: ");
                     input = int.Parse(Console.ReadLine());
 
-                    if (input > randomNumber)
-                        Console.WriteLine("Try Lower!");
+                    if (input > randomNumber) ////  to check if the number is higher or lower
+                    Console.WriteLine("Try Lower!");
 
                     else if (input < randomNumber)
                         Console.WriteLine("Try Higher!");
